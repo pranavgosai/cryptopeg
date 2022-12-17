@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #000000fa;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #000a0a;
+}
+header nav a {
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #e0ffff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+header nav a:hover,
+header nav a.active {
+  background: #94c50e;
+  color: #f9faff;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 2px;
+}
+body {
+  background: #94c50e;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1) {
+  color: #e0ffff;
+}
+section:nth-child(2) {
+  color: #ffffff;
+  background: #000000;
+}
+section:nth-child(3) {
+  color: #f7f7f7;
+}
+section:nth-child(4) {
+  color: #e6e6e6;
+  background: #000000;
+}
+section:nth-child(5) {
+  color: #e0ffff;
+}
+section .container {
+  margin: 100px;
+}
+section h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #000000;
+}
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+    </style>
+</head>
+<body>
+  
+
+    <header>
+        <nav>
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      
+      <section id="home">
+       
+        <div class="container reveal">
+          <h1>Watch the Nav Bar as you Scroll Down &#8595;</h1>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container reveal" >
+          
+          
+         
+          <img src="https://images.hive.blog/0x0/https://steemitimages.com/DQmZLdE84BuE4pNpxDCiv3QdXKNRAr6ZYyfUJjWjVraXzrZ/source.gif" alt="" style="width: 400px; margin-left: 20px;  border-radius: 20px; margin-left: 30%; width: 500px; height: 200px; box-shadow: #000000 1px 1px 10px; ">
+          <div class="text-container ">
+            <div class="text-box " style="border-radius: 10px; box-shadow: #000000 1px 1px 10px;" >
+              <p  >
+              
+              <h3>Section Text</h3>
+              
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                eius molestiae perferendis eos provident vitae iste. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Quam blanditiis,
+                officiis, voluptate quisquam aperiam nobis est, quis neque esse
+                soluta dolores iste sit corrupti! Magnam, delectus qui. Odit,
+                accusamus doloremque.
+              </p>
+              
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est
+                rerum id quis eaque rem suscipit reprehenderit quaerat vero
+                nesciunt?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum, eaque voluptatibus. Eaque tempore quam nesciunt. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Eum adipisci
+                blanditiis assumenda atque officiis? Vel, fuga facilis quia
+                reprehenderit nihil optio harum. Quo sapiente veniam atque
+                corporis tempora non repellat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="services">
+        <div class="container reveal">
+          <h2>Services</h2>
+          <div class="text-container">
+            <div class="text-box" style="border-radius: 20px; box-shadow: white 1px 1px 15px;" >
+              <img src="https://i.pinimg.com/originals/13/dc/1f/13dc1f9bd046a5c7825397eaebe1f852.gif" style="height: 50%; width: 100%; border-radius: 20px;"  alt="">
+              <h3 style="margin-top: 40px; " >Section text</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                eius molestiae perferendis eos provident vitae iste.
+              </p>
+            </div>
+            <div class="text-box" style="border-radius: 20px; box-shadow: white 1px 1px 15px;">
+              <img src="https://media.tenor.com/9sGorW8LonoAAAAC/nft-nfts.gif"style="height: 50%; width: 100%; border-radius: 20px;"alt="">
+              <h3 style="margin-top: 40px; ">Section Text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                eius molestiae perferendis eos provident vitae iste.
+              </p>
+            </div>
+            <div class="text-box" style="border-radius: 20px; box-shadow: white 1px 1px 15px;">
+              <img src="https://cldkid.com/wp-content/uploads/2021/09/ATSTGif.gif" style="height: 50%; width: 100%; border-radius: 20px;" alt="">
+              <h3 style="margin-top: 40px;">Section Text</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                eius molestiae perferendis eos provident vitae iste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="contact">
+        <div class="container reveal">
+          <h2>Contact</h2>
+          <div class="text-container">
+            <div class="text-box" style="border-radius: 20px;box-shadow: #000000 1px 1px 10px;">
+              <img src="https://www.seoclerk.com/files/user/community/000/029/365/Earn%20Bitcoins.1494669370.gif" style="height: 50%; width: 100%; border-radius: 20px;"alt="">
+              <h3 style="margin-top: 40px; " >Section Text</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="text-box" style="border-radius: 20px; box-shadow: #000000 1px 1px 10px;">
+
+              <img src="https://thumbs.gfycat.com/ShamelessExhaustedIberianbarbel-size_restricted.gif" style="height: 50%; width:100%; border-radius: 20px;" alt="">
+              <h3 style="margin-top: 40px;" >Section Text</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+<script>
+  let section = document.querySelectorAll("section");
+let menu = document.querySelectorAll("header nav a");
+
+window.onscroll = () => {
+  section.forEach((i) => {
+    let top = window.scrollY;
+    let offset = i.offsetTop - 150;
+    let height = i.offsetHeight;
+    let id = i.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      menu.forEach((link) => {
+        link.classList.remove("active");
+        document
+          .querySelector("header nav a[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
+};
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
+</script>
+
+</body>
+</html>
